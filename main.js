@@ -24,7 +24,6 @@ const ladderUpdate = (globalRankElem, classRankElem, teamRankElem) => {
             classRankElem.innerHTML = classRank.indexOf(firstRanked) + 1;
             teamRankElem.innerHTML = teamRank.indexOf(firstRanked) + 1;
         });
-        // console.log({ classMap });
     });
 }
 
@@ -33,5 +32,5 @@ const ladderUpdate = (globalRankElem, classRankElem, teamRankElem) => {
     const classRankElement = document.getElementById('classRank');
     const teamRankElement = document.getElementById('teamRank');
     ladderUpdate(overallRankElement, classRankElement, teamRankElement);
-    setInterval(() => ladderUpdate(overallRankElement, classRankElement, teamRankElement), 20000);
+    setInterval(() => ladderUpdate(overallRankElement, classRankElement, teamRankElement), 60000);
 })()
