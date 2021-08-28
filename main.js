@@ -24,7 +24,7 @@ const ladderUpdate = (globalRankElem, classRankElem, teamRankElem) => {
             classRankElem.innerHTML = classRank.indexOf(firstRanked) + 1;
             teamRankElem.innerHTML = teamRank.indexOf(firstRanked) + 1;
         });
-        console.log({ classMap });
+        // console.log({ classMap });
     });
 }
 
